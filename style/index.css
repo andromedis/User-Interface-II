@@ -1,1 +1,135 @@
-/* Add CSS styling here */
+* {
+    border: 1px solid transparent;
+    /* ^ Unfortunate jank */
+}
+
+body {
+    text-align: center;
+    color: #321f28;
+}
+
+.container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header, footer {
+    background-color: #a05344;
+}
+
+.header {
+    text-align: left;
+    margin: 0 2.5vw;
+}
+
+h1 {
+    font-size: 4vw;
+    margin: 3vw 0;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+.nav-bar {
+    display: flex;
+    margin: 2vw 0;
+}
+
+.link-button {
+    display: block;
+    width: 8.3vw;
+    height: 3vw;
+    background-color: #734046;
+    color: #e79e4f;
+    border: 1px solid #321f28;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+}
+
+.nav-button {
+
+}
+
+#current-page-button {
+    background-color: #321f28;
+}
+
+.content {
+    background-color: #e79e4f;
+}
+
+.intro {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 3vw 0;
+}
+
+.text-container, .main-image {
+    width: 45vw;
+    height: auto;
+}
+
+.main-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.text-container {
+    
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    margin: 0 7vw;
+    text-align: left;
+}
+
+.main-text p {
+    font-size: 1.5vw;
+}
+
+#projects-button {
+    width: 12.5vw;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 1vw 0;
+}
+
+.img-caption {
+    margin: 2vw 0;
+}
+
+.gallery-caption {
+    font-size: 1.2vw;
+}
+
+.gallery-img {
+    width: 20vw;
+    height: 20vw;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height: 20vw;
+}
+
+#contact-button {
+    width: 17vw;
+    height: 4.5vw;
+}
