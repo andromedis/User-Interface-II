@@ -9,13 +9,17 @@
 }
 
 header {
-    padding: 2% 1% 4% 1%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    
+    padding: 2% 4% 4% 4%;
     background-color: #BBA8A2;
 }
 
 header nav {
     display: flex;
-
+    flex-flow: row nowrap;
 }
 
 .link-button {
@@ -30,10 +34,8 @@ header nav {
 }
 
 .nav-button {
-    width: 12%;
+    width: 11%;
 }
-
-/* Main content */
 
 .intro {
     display: flex;
@@ -42,18 +44,16 @@ header nav {
 }
 
 .intro img {
-    margin: 2% 0;
-}
-
-.intro img, .text-container {
     max-width: 100%;
     width: 48%;
+    margin: 2% 0;
 }
 
 .text-container {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
+    align-items: flex-start;
     
     width: 40%;
     padding: 0 4%;
@@ -67,7 +67,6 @@ header nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-
 }
 
 .image-container {
@@ -96,4 +95,44 @@ header nav {
 #contact-button {
     width: 20%;
     height: 2.5rem;
+}
+
+/* @media for responsive design */
+
+@media (max-width: 800px) {
+    html {
+        text-align: center;
+    }
+
+    header nav {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .link-button {
+        width: 33%;
+    }
+
+
+    .intro img, .text-container {
+        width: 96%;
+    }
+
+    .text-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery {
+        justify-content: space-evenly;
+    }
+
+    .image-container {
+        width: 46%;
+    }
+
+}
+
+@media (max-width: 500px) {
+
 }
