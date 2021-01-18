@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="./style/normalize.css">
-    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/index-refactor.css">
 </head>
 <body>
     <div class="container">
@@ -20,54 +20,51 @@
                 </nav>
             </div>
         </header>
-        <section class="content">
-            <div class="intro">
-                <div class="main-image">
-                    <img src="https://i.picsum.photos/id/282/1000/600.jpg?hmac=Zj9Tp0PjbtR4_Q4_oB40l3D2qr-1GBca0TmcVCMHaX4" alt="">
-                </div>
-                <div class="text-container">
-                    <div class="main-text">
-                        <h2>Becca Peckman</h2>
-                        <a id="projects-button" class="link-button" href="projects.html">My Projects</a>
-                        <p>I have a background in Java, but this year I taught myself Python and am now in a program to learn web development. On my weekends, I've been learning Rust with a few friends.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="gallery">
-                <div class="img-caption">
-                    <img class="gallery-img" src="https://i.picsum.photos/id/579/200/200.jpg?hmac=23fWj_34nrlHUFFsNp_a49abuuXPMHAqJt_DAj3ARPQ" alt="">
-                    <p class="gallery-caption">title of a</p>
-                </div>
-                <div class="img-caption">
-                    <img class="gallery-img" src="https://i.picsum.photos/id/579/200/200.jpg?hmac=23fWj_34nrlHUFFsNp_a49abuuXPMHAqJt_DAj3ARPQ" alt="">
-                    <p class="gallery-caption">project</p>
-                </div>
-                <div class="img-caption">
-                    <img class="gallery-img" src="https://i.picsum.photos/id/579/200/200.jpg?hmac=23fWj_34nrlHUFFsNp_a49abuuXPMHAqJt_DAj3ARPQ" alt="">
-                    <p class="gallery-caption">might go</p>
-                </div>
-                <div class="img-caption">
-                    <img class="gallery-img" src="https://i.picsum.photos/id/579/200/200.jpg?hmac=23fWj_34nrlHUFFsNp_a49abuuXPMHAqJt_DAj3ARPQ" alt="">
-                    <p class="gallery-caption">right here</p>
-                </div>
-                <div class="img-caption">
-                    <img class="gallery-img" src="https://i.picsum.photos/id/579/200/200.jpg?hmac=23fWj_34nrlHUFFsNp_a49abuuXPMHAqJt_DAj3ARPQ" alt="">
-                    <p class="gallery-caption">cool thing</p>
-                </div>
-                <div class="img-caption">
-                    <img class="gallery-img" src="https://i.picsum.photos/id/579/200/200.jpg?hmac=23fWj_34nrlHUFFsNp_a49abuuXPMHAqJt_DAj3ARPQ" alt="">
-                    <p class="gallery-caption">fun thing</p>
-                </div>
-                <div class="img-caption">
-                    <img class="gallery-img" src="https://i.picsum.photos/id/579/200/200.jpg?hmac=23fWj_34nrlHUFFsNp_a49abuuXPMHAqJt_DAj3ARPQ" alt="">
-                    <p class="gallery-caption">spicy thing</p>
-                </div>
-                <div class="img-caption">
-                    <img class="gallery-img" src="https://i.picsum.photos/id/579/200/200.jpg?hmac=23fWj_34nrlHUFFsNp_a49abuuXPMHAqJt_DAj3ARPQ" alt="">
-                    <p class="gallery-caption">special thing</p>
-                </div>
+
+        <section class="intro">
+            <img src="https://i.picsum.photos/id/282/1000/600.jpg?hmac=Zj9Tp0PjbtR4_Q4_oB40l3D2qr-1GBca0TmcVCMHaX4" alt="">
+            <div class="text-container">
+                <h2>Becca Peckman</h2>
+                <a id="projects-button" class="link-button" href="projects.html">My Projects</a>
+                <p>I have a background in Java, but this year I taught myself Python and am now in a program to learn web development. On my weekends, I've been learning Rust.</p>
             </div>
         </section>
+
+        <section class="gallery">
+            <div class="image-container">
+                <img class="image" src="https://i.picsum.photos/id/427/300/300.jpg?hmac=JYcuQURhrFc6zdLf_J6ItUzSDGT9YX0BZ1iGO1tezFg" alt="">
+                <p class="caption">title of a</p>
+            </div>
+            <div class="image-container">
+                <img class="image" src="https://i.picsum.photos/id/427/300/300.jpg?hmac=JYcuQURhrFc6zdLf_J6ItUzSDGT9YX0BZ1iGO1tezFg" alt="">
+                <p class="caption">project</p>
+            </div>
+            <div class="image-container">
+                <img class="image" src="https://i.picsum.photos/id/427/300/300.jpg?hmac=JYcuQURhrFc6zdLf_J6ItUzSDGT9YX0BZ1iGO1tezFg" alt="">
+                <p class="caption">might go</p>
+            </div>
+            <div class="image-container">
+                <img class="image" src="https://i.picsum.photos/id/427/300/300.jpg?hmac=JYcuQURhrFc6zdLf_J6ItUzSDGT9YX0BZ1iGO1tezFg" alt="">
+                <p class="caption">right here</p>
+            </div>
+            <div class="image-container">
+                <img class="image" src="https://i.picsum.photos/id/427/300/300.jpg?hmac=JYcuQURhrFc6zdLf_J6ItUzSDGT9YX0BZ1iGO1tezFg" alt="">
+                <p class="caption">cool thing</p>
+            </div>
+            <div class="image-container">
+                <img class="image" src="https://i.picsum.photos/id/427/300/300.jpg?hmac=JYcuQURhrFc6zdLf_J6ItUzSDGT9YX0BZ1iGO1tezFg" alt="">
+                <p class="caption">fun thing</p>
+            </div>
+            <div class="image-container">
+                <img class="image" src="https://i.picsum.photos/id/427/300/300.jpg?hmac=JYcuQURhrFc6zdLf_J6ItUzSDGT9YX0BZ1iGO1tezFg" alt="">
+                <p class="caption">spicy thing</p>
+            </div>
+            <div class="image-container">
+                <img class="image" src="https://i.picsum.photos/id/427/300/300.jpg?hmac=JYcuQURhrFc6zdLf_J6ItUzSDGT9YX0BZ1iGO1tezFg" alt="">
+                <p class="caption">special thing</p>
+            </div>
+        </section>
+        
         <footer>
             <div class="footer">
                     <h2>Like what you see?</h2>

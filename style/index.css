@@ -1,5 +1,5 @@
 * {
-    border: 1px solid transparent;
+    /* border: 1px solid transparent; */
     /* ^ Unfortunate jank */
 }
 
@@ -107,17 +107,17 @@ h2 {
     margin: 1vw 0;
 }
 
-.img-caption {
+.image-container {
     margin: 2vw 0;
 }
 
-.gallery-caption {
+.caption {
     font-size: 1.2vw;
 }
 
-.gallery-img {
-    width: 20vw;
-    height: 20vw;
+.image {
+    width: 21vw;
+    height: 21vw;
 }
 
 .footer {
