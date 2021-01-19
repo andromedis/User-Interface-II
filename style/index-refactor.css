@@ -8,13 +8,15 @@
     
 }
 
-header {
+header, footer {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-around;
-    
-    padding: 2% 4% 4% 4%;
     background-color: #BBA8A2;
+    padding: 2% 4% 4% 4%;
+}
+
+header {
+    justify-content: space-around;
 }
 
 header nav {
@@ -29,12 +31,17 @@ header nav {
     
     border: 1px solid black;
     text-decoration: none;
+    background-color: #DDBCA2;
     color: black;
     height: 2rem;
 }
 
 .nav-button {
     width: 11%;
+}
+
+#current-page-button {
+    background-color: #8E7C70;
 }
 
 .intro {
@@ -81,20 +88,17 @@ header nav {
     text-align: center;
 }
 
-.footer {
+footer {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    
-    height: 25vh;
-    padding-bottom: 2%;
-    background-color: #BBA8A2;
+    align-content: center;
 }
 
 #contact-button {
     width: 20%;
-    height: 2.5rem;
+    height: 3rem;
 }
 
 /* @media for responsive design */
@@ -104,18 +108,31 @@ header nav {
         text-align: center;
     }
 
+    footer {
+        padding-bottom: 6%;
+    }
+
     header nav {
-        flex-flow: column nowrap;
+        /* flex-flow: column nowrap; */
         align-items: center;
     }
 
     .link-button {
+        width: 25%;
+        height: 3rem;
+    }
+    
+    #projects-button, #contact-button {
         width: 33%;
     }
 
+    .intro {
+        margin: 4% 0;
+    }
 
     .intro img, .text-container {
-        width: 96%;
+        width: 92%;
+        margin: 0;
     }
 
     .text-container {
@@ -128,11 +145,22 @@ header nav {
     }
 
     .image-container {
-        width: 46%;
+        width: 42%;
+        margin-bottom: 4%;
     }
 
 }
 
 @media (max-width: 500px) {
+    header {
+        padding-bottom: 6%;
+    }
 
+    header nav {
+        flex-flow: column nowrap;
+    }
+
+    .link-button {
+        width: 33%;
+    }
 }
